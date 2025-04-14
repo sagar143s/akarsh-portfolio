@@ -41,10 +41,10 @@ class Contact extends Component {
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
                   <h2 className="title theme-gradient">Contact With Us</h2>
-                  <p>
+                  {/* <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random
                     text.{" "}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ class Contact extends Component {
         {/* End Contact Page Area  */}
 
         {/* Start Contact Map  */}
-        <div className="rn-contact-map-area position-relative">
+        {/* <div className="rn-contact-map-area position-relative">
           <div style={{ height: "650px", width: "100%" }}>
             <GoogleMapReact
             bootstrapURLKeys={{ key: "" }}
@@ -134,7 +134,18 @@ class Contact extends Component {
               />
             </GoogleMapReact>
           </div>
-        </div>
+        </div> */}
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.821296008403!2d75.42814377511604!3d11.847779388373752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba423ff00e2e67f%3A0x8561d15e31a8f8ad!2sChala%20Smart%20Care%20Physiotherapy%20%26%20Paediatric%20Rehabilitation%20Centre!5e0!3m2!1sen!2sin!4v1744622456443!5m2!1sen!2sin"
+  width="100%"
+  height="650"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+        
         {/* End Contact Map  */}
 
         {/* Start Brand Area */}
