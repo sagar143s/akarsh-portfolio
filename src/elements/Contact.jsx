@@ -87,7 +87,7 @@ class Contact extends Component {
                       <a href="mailto:admin@gmail.com">admin@smartcare.org.in</a>
                     </p>
                     <p>
-                      <a href="mailto:example@gmail.com">example@gmail.com</a>
+                      <a href="mailto:example@gmail.com">info@smartcare.org.in</a>
                     </p>
                   </div>
                 </div>
@@ -123,12 +123,13 @@ class Contact extends Component {
         <div className="rn-contact-map-area position-relative">
           <div style={{ height: "650px", width: "100%" }}>
             <GoogleMapReact
+            bootstrapURLKeys={{ key: "" }}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
               <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
+                lat={11.847782681335712}
+                lng={75.4307233938598}
                 text="My Marker"
               />
             </GoogleMapReact>
