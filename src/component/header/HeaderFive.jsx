@@ -96,12 +96,12 @@ class HeaderFive extends Component {
                     </ul>
                   </nav>
                   <div className="header-btn">
-                    <a
+                    <Link
                       className="rn-btn"
-                      href="/contact"
+                      to="/contact"
                     >
-                      <Link to="/contact"><span>Contact us</span></Link>
-                    </a>
+                      <span>Contact us</span>
+                    </Link>
                   </div>
                   {/* Start Humberger Menu  */}
                   <div className="humberger-menu d-block d-lg-none pl--20">
