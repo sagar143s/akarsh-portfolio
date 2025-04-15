@@ -9,7 +9,7 @@ const CallAction = () => {
                         <div className="inner text-center">
                             <span>Physical therapy is the key to unlocking the door of disability.</span>
                             <h2>Insightful strategies, impactful results.</h2>
-                            <Link className="rn-button-style--2" To="/contact"><span>Contact Us</span></Link>
+                            <Link className="rn-button-style--2" to="/contact"><span>Contact Us</span></Link>
                         </div>
                     </div>
                 </div>

@@ -121,20 +121,21 @@ class Contact extends Component {
 
         {/* Start Contact Map  */}
         <div className="rn-contact-map-area position-relative">
-          <div style={{ height: "650px", width: "100%" }}>
-            <GoogleMapReact
-            bootstrapURLKeys={{ key: "" }}
-              defaultCenter={this.props.center}
-              defaultZoom={this.props.zoom}
-            >
-              <AnyReactComponent
-                lat={11.847782681335712}
-                lng={75.4307233938598}
-                text="My Marker"
-              />
-            </GoogleMapReact>
-          </div>
-        </div>
+  <div style={{ height: "500px", width: "100%" }}>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499817.12586779933!2d74.8209774890625!3d11.847779400000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba423ff00e2e67f%3A0x8561d15e31a8f8ad!2sChala%20Smart%20Care%20Physiotherapy%20%26%20Paediatric%20Rehabilitation%20Centre!5e0!3m2!1sen!2sin!4v1744742951193!5m2!1sen!2sin"
+      width="100%"
+      height="500px"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Chala Smart Care Physiotherapy Location"
+    ></iframe>
+  </div>
+</div>
+
+      
         {/* End Contact Map  */}
 
         {/* Start Brand Area */}
