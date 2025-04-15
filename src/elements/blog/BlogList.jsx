@@ -3,6 +3,11 @@ import BlogContent from "./BlogContent";
 import { Link } from "react-router-dom";
 
 class BLogList extends Component {
+  handleReadMore = (id) => {
+    // Logic to redirect to the blog details page using `history`
+    this.props.history.push(`/blog-details/${id}`);
+  };
+
   render() {
     const PostList = BlogContent.slice(0, 6);
     return (
@@ -23,12 +28,14 @@ class BLogList extends Component {
                 <div className="content">
                   <p className="blogtype">{value.category}</p>
                   <h4 className="title">
-                    <a >{value.title}</a>
+                    <a>{value.title}</a>
                   </h4>
                   <div className="blog-btn">
-                    <Link className="rn-btn text-white" to="./contact">
+                    <button 
+                      className="rn-btn text-white" 
+                      onClick={() => this.handleReadMore(value.id)}>
                       Read More
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -39,4 +46,5 @@ class BLogList extends Component {
     );
   }
 }
+
 export default BLogList;
