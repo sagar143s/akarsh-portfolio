@@ -207,9 +207,9 @@ class CorporateBusiness extends Component {
                         <a href="/blog-details">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn text-white" href="/contact">
+                        <Link className="rn-btn text-white" to="/contact">
                           Read More
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
