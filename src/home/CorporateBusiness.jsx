@@ -154,12 +154,12 @@ class CorporateBusiness extends Component {
                           )}
                           {value.buttonText ? (
                             <div className="slide-btn">
-                              <a
+                              <Link
                                 className="rn-button-style--2 btn-solid"
-                                href={`${value.buttonLink}`}
+                                to={`${value.buttonLink}`}
                               >
                                 {value.buttonText}
-                              </a>
+                              </Link>
                             </div>
                           ) : (
                             ""
