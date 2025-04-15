@@ -236,7 +236,7 @@ class CorporateBusiness extends Component {
                       </div>
                     </div>
                   </a>
-                </div> 
+                </div>
               ))}
             </div>
           </div>
