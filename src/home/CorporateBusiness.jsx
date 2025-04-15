@@ -207,10 +207,34 @@ class CorporateBusiness extends Component {
                         <a href="/blog-details">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <Link className="rn-btn text-white" to="/contact">
-                          Read More
-                        </Link>
-                      </div>
+                      <div className="blog-btn">
+  <a 
+    href="#"
+    style={{
+      border: "2px solid #a9cd37", 
+      padding: "5px 8px", 
+      textDecoration: "none", 
+      color: "#a9cd37",
+      // backgroundColor: "#fff", 
+      display: "inline-block",
+      transition: "background-color 0.3s ease, color 0.3s ease",
+      borderRadius:'5px'
+    }}
+    onMouseEnter={(e) => {
+      e.target.style.backgroundColor = "#a9cd37";
+      e.target.style.color = "#fff";
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.backgroundColor = "#000";
+      e.target.style.color = "#fff";
+    }}
+  >
+    Read More
+  </a>
+</div>
+
+</div>
+
                     </div>
                   </div>
                 </div>
