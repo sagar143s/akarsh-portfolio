@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from react-router-dom;
 const CallAction = () => {
     return (
         <div className="call-to-action-wrapper call-to-action text-white-wrapper  ptb--120">
@@ -8,7 +9,7 @@ const CallAction = () => {
                         <div className="inner text-center">
                             <span>Physical therapy is the key to unlocking the door of disability.</span>
                             <h2>Insightful strategies, impactful results.</h2>
-                            <a className="rn-button-style--2" href="/contact"><span>Contact Us</span></a>
+                            <Link className="rn-button-style--2" to="/contact"><span>Contact Us</span></Link>
                         </div>
                     </div>
                 </div>
