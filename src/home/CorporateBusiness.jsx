@@ -212,7 +212,7 @@ class CorporateBusiness extends Component {
     
     style={{
       border: "2px solid #a9cd37", 
-      padding: "5px 8px", 
+      padding: "10px 15px", 
       textDecoration: "none", 
       color: "#a9cd37",
       // backgroundColor: "#fff", 
