@@ -8,28 +8,31 @@ import logoDark from "../../assets/images/logo/logo-dark.png";
 import logoSymbolDark from "../../assets/images/logo/logo-symbol-dark.png";
 import logoSymbolLight from "../../assets/images/logo/logo-symbol-light.png";
 import logoAllDark from "../../assets/images/logo/logo-all-dark.png";
-import { Link } from "react-router-dom";
-
+import ContactButton from "./ContactButton"; // ⬅️ Import the new functional button
+// Adjust the path if needed
 
 class HeaderFive extends Component {
   constructor(props) {
     super(props);
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
+
     window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });
   }
+
   menuTrigger() {
     document.querySelector(".header-wrapper").classList.toggle("menu-open");
   }
+
   CLoseMenuTrigger() {
     document.querySelector(".header-wrapper").classList.remove("menu-open");
   }
+
   render() {
-    var elements = document.querySelectorAll(".has-droupdown > a");
-    for (var i in elements) {
+    const elements = document.querySelectorAll(".has-droupdown > a");
+    for (let i in elements) {
       if (elements.hasOwnProperty(i)) {
         elements[i].onclick = function () {
           this.parentElement
@@ -42,24 +45,29 @@ class HeaderFive extends Component {
 
     const { logo, color, headerPosition } = this.props;
     let logoUrl;
-    if (logo === "light") {
-      logoUrl = <img src={logoLight} alt="Trydo" />;
-    } else if (logo === "dark") {
-      logoUrl = <img src={logoDark} alt="Trydo" />;
-    } else if (logo === "symbol-dark") {
-      logoUrl = <img src={logoSymbolDark} alt="Trydo" />;
-    } else if (logo === "all-dark") {
-      logoUrl = <img src={logoAllDark} alt="Trydo" />;
-    } else if (logo === "symbol-light") {
-      logoUrl = <img src={logoSymbolLight} alt="Trydo" />;
-    } else {
-      logoUrl = <img src={logoDefault} alt="Trydo" />;
+
+    switch (logo) {
+      case "light":
+        logoUrl = <img src={logoLight} alt="Trydo" />;
+        break;
+      case "dark":
+        logoUrl = <img src={logoDark} alt="Trydo" />;
+        break;
+      case "symbol-dark":
+        logoUrl = <img src={logoSymbolDark} alt="Trydo" />;
+        break;
+      case "all-dark":
+        logoUrl = <img src={logoAllDark} alt="Trydo" />;
+        break;
+      case "symbol-light":
+        logoUrl = <img src={logoSymbolLight} alt="Trydo" />;
+        break;
+      default:
+        logoUrl = <img src={logoDefault} alt="Trydo" />;
     }
 
     return (
-      <header
-        className={`header-area formobile-menu ${headerPosition} ${color}`}
-      >
+      <header className={`header-area formobile-menu ${headerPosition} ${color}`}>
         <div className="header-wrapper" id="header-wrapper">
           <div className="container">
             <div className="row align-items-center">
@@ -76,7 +84,6 @@ class HeaderFive extends Component {
                     <ul className="mainmenu">
                       <li className="has-droupdown">
                         <Link to="#">Home</Link>
-                      
                       </li>
                       <li className="has-droupdown">
                         <Link to="/">Service</Link>
@@ -85,50 +92,30 @@ class HeaderFive extends Component {
                             <Link to="/contact">Homecare Physiotherapy</Link>
                           </li>
                           <li>
-                            <Link to="/contact"> Pediatric Physiotherapy</Link>
+                            <Link to="/contact">Pediatric Physiotherapy</Link>
                           </li>
                           <li>
                             <Link to="/contact">Pre and Post Surgery Rehabilitation</Link>
                           </li>
                         </ul>
                       </li>
-                      
-                     
                     </ul>
                   </nav>
+
                   <div className="header-btn">
-                    {/* <Link
-                      className="rn-btn"
-                      href="/contact"
-                    >
-                      <Link to="/contact"><span>Contact us</span></Link>
-                    </Link> */}
-<Link
-  to="/contact"
-  className="rn-btn"
-  role="button"
-  aria-label="Contact Us"
->
-  Contact Us
-</Link>
-   
-                    
+                    <ContactButton />
                   </div>
+
                   {/* Start Humberger Menu  */}
                   <div className="humberger-menu d-block d-lg-none pl--20">
-                    <span
-                      onClick={this.menuTrigger}
-                      className="menutrigger text-white"
-                    >
+                    <span onClick={this.menuTrigger} className="menutrigger text-white">
                       <FiMenu />
                     </span>
                   </div>
                   {/* End Humberger Menu  */}
+
                   <div className="close-menu d-block d-lg-none">
-                    <span
-                      onClick={this.CLoseMenuTrigger}
-                      className="closeTrigger"
-                    >
+                    <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
                       <FiX />
                     </span>
                   </div>
@@ -141,4 +128,5 @@ class HeaderFive extends Component {
     );
   }
 }
+
 export default HeaderFive;
