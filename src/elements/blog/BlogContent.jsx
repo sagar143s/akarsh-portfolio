@@ -7,7 +7,7 @@ const BlogContent = [
   {
     images: blog1,
     title: "CLINIC TREATMENTS",
-    category: "High quality physiotherapy care at our CB Physiotherapy Centre near you.",
+    category: "High quality physiotherapy care at our SmartCare Physiotherapy Centre near you.",
   },
   {
     images: blog2,

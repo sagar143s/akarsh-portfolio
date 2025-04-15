@@ -22,12 +22,12 @@ class BLogList extends Component {
                 <div className="content">
                   <p className="blogtype">{value.category}</p>
                   <h4 className="title">
-                    <a href="/blog-details">{value.title}</a>
+                    <a >{value.title}</a>
                   </h4>
                   <div className="blog-btn">
-                    <a className="rn-btn text-white" href="/blog-details">
+                    <Link className="rn-btn text-white" to="contactus">
                       Read More
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
