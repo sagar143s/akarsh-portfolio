@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import BlogContent from "./BlogContent";
+import { Link } from "react-router-dom";
 
 class BLogList extends Component {
   render() {

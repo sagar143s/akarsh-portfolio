@@ -12,7 +12,7 @@ const BlogContent = [
   {
     images: blog2,
     title: "PHYSIO HOME VISITS",
-    category: "Home Visits by certified CB Physiotherapists for Patients with mobility issues & for patients looking for convenience",
+    category: "Home Visits by certified SmartCare Physiotherapists for Patients with mobility issues & for patients looking for convenience",
   },
 
   {
