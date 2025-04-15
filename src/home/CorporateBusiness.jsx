@@ -9,6 +9,7 @@ import FooterTwo from "../component/footer/FooterTwo";
 import CallAction from "../elements/callaction/CallAction";
 import Team from "../blocks/team/TeamTwo";
 import Accordion01 from "../elements/Accordion";
+import { Link } from "react-router-dom";
 import Helmet from "../component/common/Helmet";
 
 import {
@@ -154,12 +155,12 @@ class CorporateBusiness extends Component {
                           )}
                           {value.buttonText ? (
                             <div className="slide-btn">
-                              <a
+                              <Link
                                 className="rn-button-style--2 btn-solid"
                                 href={`${value.buttonLink}`}
                               >
                                 {value.buttonText}
-                              </a>
+                              </Link>
                             </div>
                           ) : (
                             ""
