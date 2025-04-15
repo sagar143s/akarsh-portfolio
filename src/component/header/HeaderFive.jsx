@@ -8,6 +8,7 @@ import logoDark from "../../assets/images/logo/logo-dark.png";
 import logoSymbolDark from "../../assets/images/logo/logo-symbol-dark.png";
 import logoSymbolLight from "../../assets/images/logo/logo-symbol-light.png";
 import logoAllDark from "../../assets/images/logo/logo-all-dark.png";
+import { Link } from "react-router-dom";
 
 
 class HeaderFive extends Component {
@@ -96,12 +97,19 @@ class HeaderFive extends Component {
                     </ul>
                   </nav>
                   <div className="header-btn">
-                    <a
+                    {/* <Link
                       className="rn-btn"
                       href="/contact"
                     >
                       <Link to="/contact"><span>Contact us</span></Link>
-                    </a>
+                    </Link> */}
+
+                    <Link
+                      className="rn-btn"
+                      to="/contact"
+                    >
+                      <spam>Contact Us</spam></Link>
+                    
                   </div>
                   {/* Start Humberger Menu  */}
                   <div className="humberger-menu d-block d-lg-none pl--20">
