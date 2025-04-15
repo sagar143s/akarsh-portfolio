@@ -26,7 +26,7 @@ class BLogList extends Component {
                     <a >{value.title}</a>
                   </h4>
                   <div className="blog-btn">
-                    <Link className="rn-btn text-white" to="/contact">
+                    <Link className="rn-btn text-white" to="./contact">
                       Read More
                     </Link>
                   </div>
