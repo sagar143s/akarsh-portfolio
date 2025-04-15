@@ -12,4 +12,16 @@ export default defineConfig({
       },
     },
   },
+    resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    outDir: "dist",
+  },
+  server: {
+    historyApiFallback: true, // Fallback to index.html for SPA routes
+  },
+});
 });
