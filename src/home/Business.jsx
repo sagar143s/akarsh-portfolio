@@ -14,6 +14,7 @@ import Team from "../elements/Team";
 import Accordion01 from "../elements/Accordion";
 import { FiCheck, FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
+import { Link } from "react-router-dom";
 
 import about from "../assets/images/about/about-4.png";
 import about2 from "../assets/images/about/about-3.png";
@@ -193,9 +194,9 @@ class Business extends Component {
                     <Accordion01 />
                   </div>
                   <div className="about-button mt--50">
-                    <a className="rn-button-style--2 btn-solid" href="/about">
+                    <Link className="rn-button-style--2 btn-solid" to="/contact">
                       See how it works
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

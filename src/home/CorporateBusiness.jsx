@@ -288,9 +288,9 @@ class CorporateBusiness extends Component {
                     <Accordion01 />
                   </div>
                   <div className="about-button mt--50">
-                    <a className="rn-button-style--2 btn-solid" href="/contact">
+                    <Link className="rn-button-style--2 btn-solid" to="/contact">
                       See how it works
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -353,7 +353,7 @@ class CorporateBusiness extends Component {
                   <ModalVideo
                     channel="youtube"
                     isOpen={this.state.isOpen}
-                    videoId="ZOoVOfieAF8"
+                    videoId="Hy1qjQomD8Y"
                     onClose={() => this.setState({ isOpen: false })}
                   />
                   <button
