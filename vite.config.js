@@ -12,13 +12,4 @@ export default defineConfig({
       },
     },
   },
-    
-  },
-  build: {
-    outDir: "dist",
-  },
-  server: {
-    historyApiFallback: true, // Fallback to index.html for SPA routes
-  },
-});
 });

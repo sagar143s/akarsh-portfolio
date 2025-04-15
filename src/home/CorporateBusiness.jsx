@@ -10,7 +10,6 @@ import CallAction from "../elements/callaction/CallAction";
 import Team from "../blocks/team/TeamTwo";
 import Accordion01 from "../elements/Accordion";
 import Helmet from "../component/common/Helmet";
-import { Link } from 'react-router-dom';
 
 import {
   FiCast,
@@ -155,12 +154,12 @@ class CorporateBusiness extends Component {
                           )}
                           {value.buttonText ? (
                             <div className="slide-btn">
-                              <Link
+                              <a
                                 className="rn-button-style--2 btn-solid"
-                                to={`${value.buttonLink}`}
+                                href={`${value.buttonLink}`}
                               >
                                 {value.buttonText}
-                              </Link>
+                              </a>
                             </div>
                           ) : (
                             ""
@@ -227,7 +226,7 @@ class CorporateBusiness extends Component {
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
-                  <a className="text-center" href="/">
+                  <a className="text-center" href="/service-details">
                     <div className="service service__style--2">
                       <div className="icon">{val.icon}</div>
                       <div className="content">
@@ -353,7 +352,7 @@ class CorporateBusiness extends Component {
                   <ModalVideo
                     channel="youtube"
                     isOpen={this.state.isOpen}
-                    videoId="Hy1qjQomD8Y"
+                    videoId="ZOoVOfieAF8"
                     onClose={() => this.setState({ isOpen: false })}
                   />
                   <button

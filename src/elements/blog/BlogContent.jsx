@@ -7,12 +7,12 @@ const BlogContent = [
   {
     images: blog1,
     title: "CLINIC TREATMENTS",
-    category: "High quality physiotherapy care at our SmartCare Physiotherapy Centre near you.",
+    category: "High quality physiotherapy care at our CB Physiotherapy Centre near you.",
   },
   {
     images: blog2,
     title: "PHYSIO HOME VISITS",
-    category: "Home Visits by certified Smartcare Physiotherapists for Patients with mobility issues & for patients looking for convenience",
+    category: "Home Visits by certified CB Physiotherapists for Patients with mobility issues & for patients looking for convenience",
   },
 
   {
