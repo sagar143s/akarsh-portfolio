@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from react-router-dom;
+import { Link } from 'react-router-dom';
 const CallAction = () => {
     return (
         <div className="call-to-action-wrapper call-to-action text-white-wrapper  ptb--120">
