@@ -103,12 +103,15 @@ class HeaderFive extends Component {
                     >
                       <Link to="/contact"><span>Contact us</span></Link>
                     </Link> */}
-
-                    <Link
-                      className="rn-btn"
-                      to="/contact"
-                    >
-                      <spam>Contact Us</spam></Link>
+<Link
+  to="/contact"
+  className="rn-btn"
+  role="button"
+  aria-label="Contact Us"
+>
+  Contact Us
+</Link>
+   
                     
                   </div>
                   {/* Start Humberger Menu  */}
