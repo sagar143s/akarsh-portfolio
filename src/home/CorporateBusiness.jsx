@@ -211,25 +211,25 @@ class CorporateBusiness extends Component {
   <a 
     
     style={{
-      border: "2px solid #a9cd37", 
+      border: " ", 
       padding: "10px 15px", 
       textDecoration: "none", 
-      color: "#a9cd37",
+      color: "",
       // backgroundColor: "#fff", 
       display: "inline-block",
-      transition: "background-color 0.3s ease, color 0.3s ease",
-      borderRadius:'5px'
+      transition: "",
+      borderRadius:''
     }}
     onMouseEnter={(e) => {
-      e.target.style.backgroundColor = "#a9cd37";
-      e.target.style.color = "#fff";
+      e.target.style.backgroundColor = "";
+      e.target.style.color = "";
     }}
     onMouseLeave={(e) => {
-      e.target.style.backgroundColor = "#000";
-      e.target.style.color = "#fff";
+      e.target.style.backgroundColor = "";
+      e.target.style.color = "";
     }}
   >
-    Read More
+    
   </a>
 </div>
 
