@@ -86,10 +86,7 @@ class Contact extends Component {
                     <p>
                       <a href="mailto:admin@gmail.com">admin@smartcare.org.in</a>
                     </p>
-                     <p>
-                      <a href="mailto:admin@gmail.com">nishanadas7350@gmail.com</a>
-                    </p>
-                     <p>
+                    <p>
                       <a href="mailto:admin@gmail.com">smartcarephysio@gmail.com</a>
                     </p>
                     <p>
